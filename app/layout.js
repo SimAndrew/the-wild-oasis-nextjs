@@ -1,5 +1,5 @@
-import Logo from '@/app/components/Logo.js';
-import Navigation from '@/app/components/Navigation.js';
+import Logo from '@/app/_components/Logo.js';
+import Navigation from '@/app/_components/Navigation.js';
 
 export const metadata = {
 	title: {
