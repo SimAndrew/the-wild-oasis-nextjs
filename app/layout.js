@@ -1,5 +1,6 @@
 import Logo from '@/app/_components/Logo.js';
 import Navigation from '@/app/_components/Navigation.js';
+import '@/app/_styles/globals.css';
 
 export const metadata = {
 	title: {
@@ -13,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body>
+			<body className="bg-primary-950 text-primary-50 min-h-screen">
 				<header>
 					<Logo />
 					<Navigation />
