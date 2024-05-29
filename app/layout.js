@@ -14,6 +14,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
+			<head>
+				<title>{metadata.title.default}</title>
+				<meta name="description" content={metadata.description} />
+			</head>
+
 			<body className="bg-primary-950 text-primary-50 min-h-screen">
 				<header>
 					<Logo />
