@@ -5,6 +5,7 @@ import { auth } from '@/app/_lib/auth';
 import LoginMessage from '@/app/_components/LoginMessage';
 
 async function Reservation({ cabin }) {
+	// eslint-disable-next-line no-undef
 	const [settings, bookedDates] = await Promise.all([
 		getSettings(),
 		getBookedDatesByCabinId(cabin.id),

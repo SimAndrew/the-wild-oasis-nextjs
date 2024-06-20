@@ -4,6 +4,7 @@ export async function GET(request, { params }) {
 	const { cabinId } = params;
 
 	try {
+		// eslint-disable-next-line no-undef
 		const [cabin, bookedDates] = await Promise.all([
 			getCabin(cabinId),
 			getBookedDatesByCabinId(cabinId),
